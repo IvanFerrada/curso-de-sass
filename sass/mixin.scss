@@ -1,0 +1,25 @@
+/* Crea mixins para optimizar el codigo ejemplo*/
+@mixin cuadrado {
+
+    background-color:black;
+    width: 200px;
+    height:200px;
+    margin:5px;
+    padding:10px;
+}
+.cuadrado-1{
+
+    @include cuadrado;
+}
+.cuadrado-2{
+
+    @include cuadrado;
+    
+}
+.cuadrado-3{
+
+    @include cuadrado;
+    
+}
+
+/* el mixin se crea con codigo que se repite y se usa para no volver a escribir el codigo */

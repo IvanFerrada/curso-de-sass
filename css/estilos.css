@@ -1,0 +1,90 @@
+/* asi se importan las variables o archivos en sass*/
+footer {
+  background: #444;
+}
+footer h4 {
+  color: red;
+}
+footer h4 a {
+  color: blue;
+}
+
+/* Enlazar sass a css comando sass --watch sass:css*/
+h1 {
+  color: aquamarine;
+}
+
+/* ejemplo de como se podene estilos de manera comun en css y en sass*/
+/* css comun escalar el arbol padre a hijo  usando 6 lieneas de codigo  */
+/*footer{
+    background: violet;
+}
+footer h4{
+    color: azure;
+}
+footer h4 a{
+    color: bisque;
+}
+
+/* en sass se ahorra todo ese codigo usando solo 3 lineas de codigo!! */
+/*
+
+footer{
+    background: #444;
+    h4{
+        color: red;
+        a{
+            color: blue;
+        }
+    }
+}
+
+*/
+/* variables en sass*/
+section {
+  background: #444;
+}
+section h1 {
+  background: aqua;
+}
+section h2 {
+  background: bisque;
+}
+section p {
+  background: beige;
+}
+
+/* sintaxis de variables de sass  se puede guardar tanto el color como una propiedad css */
+/*
+$estiloUno:red;
+$estiloDos:rgb(50, 135, 206);
+$estiloTres:rgb(221, 149, 149);
+$estiloCuatro:rgb(95, 63, 63);
+*/
+.variable {
+  width: 200px;
+  height: 200px;
+  background: #555555;
+  border: 1px solid red;
+}
+
+/* se puede separar  archivos sass por un lado el estilo y por otro lado las variables y etc se importan en el archivo de estilos.sass  con @import"variables" sin el _ ni la extencion  al principio del archivo*/
+/* Los mixins sirven para optimizar el codigo ejemplo en el archivo mixin.scss*/
+/*
+@mixin cuadrado {
+        background-color: bisque;
+        width:200px;
+        height:200px;
+        margin:5px;
+        padding:10px;
+    }
+
+
+.cuadrado-1{
+    @include cuadrado;
+}
+
+*/
+/* aparte de su sintaxis @minixn ; se puede escribir con parametros ejemplo @mixin cuadrado ($fondo)  y en donde se quiera agregar el mixin  se escrive @include cuadrado (propiedad)*/
+
+/*# sourceMappingURL=estilos.css.map */
